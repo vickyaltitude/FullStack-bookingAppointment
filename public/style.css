@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #285430;
+}
+
+.form-box{
+    margin-top: 50px;
+    width: 100%;
+    min-height: 100%;
+    background: #285430;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-box form{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: 500px;
+    height: 350px;
+    background: #A4BE7B;
+    color: #285430;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+
+form p{
+    margin-bottom: 20px;
+}
+form p input{
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+form button{
+    width : 300px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    background: #285430;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+form button:hover{
+    background: whitesmoke;
+    color: #285430;
+    cursor: pointer;
+    font-weight: bolder;
+}
+table {
+    width: 100%; /* Make the table width 100% of the container */
+    table-layout: fixed; /* Keep fixed layout */
+}
+
+.table-main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-main table{
+    background: whitesmoke;
+    width: 90%;
+    min-height: 90vh;
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+}
+
+.table-main table thead{
+    background: #A4BE7B;
+    font-size: 1.5rem;
+    color: #285430;
+  
+}
+.table-main table thead th{
+    border: 3px solid black;
+    padding: 15px;
+}
+.table-main table tbody tr td{
+    border: 3px solid black;
+    color: black;
+    background: #e8f3d7;
+    font-size: 1.3rem;
+    width: 30%; 
+    height: 50px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-main table tbody tr .confirmed{
+    color: green;
+}
+.table-main table tbody tr .edit button{
+    width: 150px;
+    height: 35px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    border-radius: 15px;
+    background: linear-gradient(155deg,yellow,whitesmoke)
+}
+.table-main table tbody tr .delete button{
+    width: 150px;
+    height: 35px;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    background: linear-gradient(155deg,red,whitesmoke)
+}
+.table-main table tbody tr .edit button:hover{
+  cursor: pointer;
+  background: linear-gradient(155deg,rgb(252, 252, 145),whitesmoke)
+
+}
+.table-main table tbody tr .delete button:hover{
+    cursor: pointer;
+    background: linear-gradient(155deg,rgb(248, 110, 110),whitesmoke)
+  }
