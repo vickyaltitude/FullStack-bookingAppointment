@@ -12,8 +12,8 @@ async function getData() {
                     <td>${user.email}</td>
                     <td>${user.slot}</td>
                     <td>Confirmed</td>
-                    <td class="edit"><button type="button">Edit Slot</button></td>
-                    <td class="delete"><button type="button">Delete Slot</button></td>
+                    <td class="edit"><form action= 'edit/${user.id}' method='get'><button type="submit">Edit Slot</button></form></td>
+                    <td class="delete"><form action='/delete/${user.id}' method='post'><button type="submit">Delete Slot</button></form></td>
                 </tr>`;
             tbody.insertAdjacentHTML('beforeend', row);
         });

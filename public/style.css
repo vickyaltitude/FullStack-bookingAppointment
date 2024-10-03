@@ -108,7 +108,7 @@ table {
 .table-main table tbody tr .confirmed{
     color: green;
 }
-.table-main table tbody tr .edit button{
+.table-main table tbody tr .edit form button{
     width: 150px;
     height: 35px;
     font-size: 1.1rem;
@@ -116,7 +116,7 @@ table {
     border-radius: 15px;
     background: linear-gradient(155deg,yellow,whitesmoke)
 }
-.table-main table tbody tr .delete button{
+.table-main table tbody tr .delete form button{
     width: 150px;
     height: 35px;
     font-weight: bolder;
@@ -124,12 +124,3 @@ table {
     border-radius: 15px;
     background: linear-gradient(155deg,red,whitesmoke)
 }
-.table-main table tbody tr .edit button:hover{
-  cursor: pointer;
-  background: linear-gradient(155deg,rgb(252, 252, 145),whitesmoke)
-
-}
-.table-main table tbody tr .delete button:hover{
-    cursor: pointer;
-    background: linear-gradient(155deg,rgb(248, 110, 110),whitesmoke)
-  }
